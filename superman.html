@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyModule">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Directive</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script type="text/javascript" src="scripts/ng-lib/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/directives.superman.js"></script>
+</head>
+<body>
+  
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <div class="panel-title">超人能力！</div>
+    </div>
+    <div class="panel-body">
+      <ul>
+        <li>學習繼承父 Directive</li>
+        <li>學習創造獨立作用域：每個 directive 都有自己的 scope</li>
+        <li>學習呼叫在父 Directive 定義的 controller</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row" style="margin: 10px">
+    <div class="col-md-4">
+      <superman strength><h1>超人一號 - 力量</h1></superman>
+    </div>
+  </div>
+  <div class="row" style="margin: 10px">
+    <div class="col-md-4">
+      <superman strength speed><h1>超人二號 - 力量 + 敏捷</h1></superman>
+    </div>
+  </div>
+  <div class="row" style="margin: 10px">
+    <div class="col-md-4">
+      <superman strength speed light><h1>超人三號 - 力量 + 敏捷 + 發光</h1></superman>
+    </div>
+  </div>
+</body>
+</html>
