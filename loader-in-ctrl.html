@@ -7,8 +7,11 @@
   <script type="text/javascript" src="scripts/directives.loader-in-ctrl.js"></script>
 </head>
 <body>
-  <div ng-controller="MyCtrl">
-    <loader howToLoad="loadDate()"><h1>滑動下載</h1></loader>
-  </div> 
+  <div ng-controller="MyCtrl1" style="background-color: gray;">
+    <loader howToLoad="loadData1()"><h1>滑動下載一號機</h1></loader>
+  </div>
+  <div ng-controller="MyCtrl2" style="background-color: blue;">
+    <loader howToLoad="loadData2()"><h1>滑動下載二號機</h1></loader>
+  </div>
 </body>
 </html>
