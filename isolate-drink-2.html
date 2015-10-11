@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyModule">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular Directive</title>
+  <script type="text/javascript" src="scripts/ng-lib/angular.min.js"></script>
+  <script type="text/javascript" src="scripts/directives.isolate-drink-2.js"></script>
+</head>
+<body>
+  <div class="row" ng-controller="myCtrl">
+    <br>
+    <h1>myCtrl</h1>
+    <input type="text" ng-model="ctrlFlavor"/>
+    <br>
+    <h1>Drink Directive</h1>
+    <drink flavor="ctrlFlavor"></drink>
+    <!-- 這裏不能用 {{ctrlFlavor}} (會變成字串) 的方式傳 -->
+  </div>
+</body>
+</html>
